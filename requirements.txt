@@ -1,3 +1,4 @@
-aiogram==3.4.1
-python-dotenv
+aiogram==3.5.0
 deep-translator
+python-dotenv
+

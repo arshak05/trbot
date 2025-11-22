@@ -13,7 +13,7 @@ bot = Bot(API_TOKEN)
 dp = Dispatcher()
 
 user_lang = {}
-user_history = {}  # история переводов
+user_history = {}  
 
 
 def translate_text(text, target):
@@ -120,7 +120,7 @@ async def translate_msg(msg: types.Message):
 
     result = translate_text(msg.text, lang)
 
-    # сохраняем в историю
+  
     if user_id not in user_history:
         user_history[user_id] = []
 
@@ -135,6 +135,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
 
